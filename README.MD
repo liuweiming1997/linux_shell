@@ -1,4 +1,4 @@
-# just save my homework
+# save my homework
 
 ## style glide
 
@@ -21,5 +21,5 @@
 	* `expr 2 + 1` is correct
 
 * shell `if` **must** use space to split, it`s means
-	* `if [$var lt 1]` is wrong
-	* `if [ $var lt 1 ]` is correct
+	* `if [[$var -lt 1]]` is wrong
+	* `if [[ $var -lt 1 ]]` is correct
