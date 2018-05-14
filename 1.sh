@@ -6,8 +6,9 @@ function PWD() {
 }
 
 function getFileName() {
-        echo $(basename $0)
-      #  echo $(dirname $0)
+        echo $(basename $0) # 1.sh
+      #  echo $(dirname $0) # .
+      #  echo $0            # ./1.sh 
 }
 
 function getDate() {
