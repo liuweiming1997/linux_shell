@@ -1,4 +1,4 @@
-main:mytool1.o mytool2.o main.o
+main:function/mytool1.o function/mytool2.o main.o
 	gcc function/mytool1.o function/mytool2.o main.o -o main
 
 main.o:main.c
