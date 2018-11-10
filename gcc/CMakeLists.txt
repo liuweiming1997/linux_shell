@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 
 project(gcc)
-set(src main.c ./function/mytool1.c ./function/mytool1.h ./function/mytool2.c ./function/mytool2.h)
+set(src main.c)
+aux_source_directory(./function src)
 
 
 add_executable(gcc.bin ${src}) 
