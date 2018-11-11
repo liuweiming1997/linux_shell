@@ -5,6 +5,8 @@ using namespace std;
 int main() {
 	mytool1_print("hello mytool1!");
 	mytool2_print("hello mytool2!");
+	::mytool1 v;
+	v.show();
   cout << "fuck" << endl;
 	return 0;
 }

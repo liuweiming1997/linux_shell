@@ -1,11 +1,17 @@
 main:function/mytool1.o function/mytool2.o main.o
-	gcc function/mytool1.o function/mytool2.o main.o -o main
+	g++ function/mytool1.o function/mytool2.o main.o -o main
 
-main.o:main.c
-	gcc -c main.c -o main.o -Ifunction
+main.o:main.cpp
+	g++ -c main.cpp -o main.o -Ifunction
 
-mytool1.o:function/mytool1.c
-	gcc -c function/mytool1.c -o function/mytool1.o
+mytool1.o:function/mytool1.pp
+	g++ -c function/mytool1.cpp -o function/mytool1.o
 
-mytool2.o:function/mytool2.c 
-	gcc -c function/mytool2.c -o function/mytool2.o
+mytool2.o:function/mytool2.pp 
+	g++ -c function/mytool2.cpp -o function/mytool2.o
+
+clean:
+	rm -rf function/mytool1.o
+	rm -rf function/mytool2.o
+	rm -rf main.o
+	rm -rf main
