@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 project(gcc)
-set(src main.c)
+set(src main.cpp)
 aux_source_directory(./function src)
 
 
